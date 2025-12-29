@@ -1,0 +1,327 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Get Started with Webflow</title>
+    <style>
+  *{
+    font-family: 'Inter', sans-serif;
+  }
+    ul{
+        list-style-type: none;
+        background-color: snow;
+        margin: 0;
+        padding: 0 30px;
+        display: flex;
+        align-items: center;
+    }
+
+    ul li a{
+        display: flex;
+        padding: 20px;
+        text-decoration: none;
+        color: black;
+        font-size: 25px;
+        transform: 0.3s;
+    }
+    .log{
+        display: flex;
+        margin-right: 18px;
+        background-color: #F3F5FF;
+        width: 80px;
+        height:50px;
+        border-radius: 3px;
+    }
+    .push-right{
+             margin-left: auto;
+            display: flex;
+            gap: 15px;  
+    }
+    .free{
+        display: flex;
+        background-color: #4d5bff;
+        width: 200px;
+        height: 50px;
+        border-radius: 3px;
+    }
+    ul li a:hover{
+        background-color: #0093cb;
+        box-shadow: rgba(69, 44, 133, 0.4) 0px 30px 90px;
+        color: aqua;
+        border-radius: 15px;
+    }
+    .free:hover{
+        color: #4C5BFF;
+        background-color: #F3F5FF;
+    }
+    .fst
+    {
+        padding: 13px;font-size: 18px;color: #4C5BFF;
+    }
+    .st{
+        padding: 13px;font-size: 18px;color: white;
+    }
+    .next li{
+    padding: 10px 20px 10px 10px;
+    color: ;
+    font-size: 20px;
+    }
+    .next{
+
+      margin: 0;
+      padding: 0;
+    }
+    .next li:hover{
+        color: rgb(77, 91, 255,0.7);
+    }
+    .container{
+        display: flex;
+
+        gap: 30px;
+        margin: 0;
+        padding: 40px;
+        justify-content: center;
+    }
+    .box1{
+        width: 250px;
+        height: 600px;
+        background-color: #4C5BFF;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    .box{
+        width: 250px;
+        height: 600px;
+        background-color: #F3F5FF;
+        display: flex;
+        flex-direction: column;
+        border-radius: 5px;
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    .box2{
+        width: 250px;
+        height: 600px;
+        background-color: white; color: black;
+        border-radius: 5px; 
+        box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    }
+    .head{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: bold;
+        color: white;
+        padding:  70px 70px 5px;
+        margin-bottom: 0; 
+    }
+    .head-b{
+        display: flex;
+        justify-content: center;
+        font-size: 25px;
+        font-weight: bold;
+        color: #4C5BFF;
+        padding:  70px 70px 5px;
+        margin-bottom: 0; 
+    }
+    .price{
+        display: flex;
+        justify-content: center;
+        padding: 10px;        
+        font-size: 70px;
+        color: white;
+    }
+    .price-b{
+        display: flex;
+        justify-content: center;
+        padding: 10px;        
+        font-size: 70px;
+        color: black;
+    }
+    .desc{
+        display: flex;
+        text-align: center;
+        padding: 15px;
+        font-size: 20px;
+        color: rgb(255, 255, 255,0.8);
+    }
+    .desc-b{
+        display: flex;
+        text-align: center;
+        padding: 15px;
+        font-size: 20px;
+        color: rgb(0, 0, 0,0.8);
+    }
+    .bft{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        font-size: 18px;
+        color: rgb(255, 255, 255,0.9);
+        list-style-type: none   ;
+        background-color:#4C5BFF ;
+        margin-bottom: 50px;
+    }
+    .bft hr{
+    width: 100%;
+    border: 1.5px solid rgba(255,255,255,0.5);
+}
+.bft-b{
+        display: flex;
+        flex-direction: column;
+        padding: 15px;
+        font-size: 18px;
+        color: rgb(0, 0, 0,0.9);
+        list-style-type: none   ;
+        background-color:#F3F5FF ;
+        margin-bottom: 40px;
+    }
+    .bft-b hr{
+    width: 100%;
+    border: 1.5px solid rgba(0,0,0,0.5);
+}
+.btn{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background-color: white;
+    color: black;
+    width: 150px;
+    height: 15px;
+    padding: 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin: auto;
+}
+.btn:hover{
+    background-color: black;
+    color: white;
+    border-radius: 15px;
+}
+.btn-1{
+    display: flex;
+    justify-content: center;
+    align-items:center ;
+    background-color: black;
+    color: white;
+    width: 150px;
+    height: 15px;
+    padding: 20px;
+    margin-left: 30px;
+    margin-top: 50px;
+    cursor: pointer;
+    border-radius: 5px;
+    margin-top: 80px;
+}
+.btn-1:hover{
+    background-color: rgb(0, 0, 0,0.5);
+    color: black;
+    border-radius: 15px;
+}
+</style>
+</head>
+<body>
+    <ul class="nav">
+        <li style="font-style: italic;"><a href=""><strong>webFlow</strong></a></li>
+        <li><a href="">Products</a></li>
+        <li><a href="">Resources</a></li>
+        <li><a href="">Enterprise</a></li>
+        <li><a href="">Hire an Expert</a></li>
+        <div class="push-right">
+        <li class="log"><a href="" class="fst">Log in</a></li>
+        <li class="free"><a href="" class="st">Get Started - it's free</a></li>
+        </div>  
+    </ul> 
+    <hr> 
+    <ul class="next">
+        <li>Site Plans</li>
+        <li>Workspace plans</li>
+        <li>Need Guidance?</li>
+         <li>WorkFlow Enterprise</li>
+        <li>FAQs</li>
+    </ul>
+    <hr>
+    <div class="container">
+        <div class="box1">
+            <div class="head"">Starter</div>
+            <div class="price">$0</div>
+            <div class="desc">Start Designing,learn Webflow, and publish to webflow.io</div>
+            <ul class="bft" >
+                 <hr>
+                <li>Webflow.io domain</li>
+                <hr>
+                <li>50 CMS items</li>
+                <hr>
+                <li>1 GB bandwidth</li>
+            </ul>
+            <div class="btn" >
+               <h3>Start For Free</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="head-b"">Basic</div>
+            <div class="price-b">$15</div>
+            <div class="desc-b">Get the essentials to launch a simple site.</div>
+            <ul class="bft-b" >
+                 <hr>
+                <li>Custom domain</li>
+                <hr>
+                <li>0 CMS items</li>
+                <hr>
+                <li>50 GB bandwidth</li>
+            </ul>
+            <div class="btn" >
+               <h3>Add Site</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="head-b"">Starter</div>
+            <div class="price-b">$20</div>
+            <div class="desc-b">Start a blog or other content-driven site.</div>
+            <ul class="bft-b" >
+                 <hr>
+                <li>Custom domain</li>
+                <hr>
+                <li>2000 CMS items</li>
+                <hr>
+                <li>200 GB bandwidth</li>
+            </ul>
+            <div class="btn" >
+               <h3>Start For Free</h3>
+            </div>
+        </div>
+        <div class="box">
+            <div class="head-b"">CMS</div>
+            <div class="price-b">$40</div>
+            <div class="desc-b">Build high traffic marketing site.</div>
+            <ul class="bft-b" >
+                 <hr>
+                <li>Custom domain</li>
+                <hr>
+                <li>10,000 CMS items</li>
+                <hr>
+                <li>400 GB bandwidth</li>
+            </ul>
+            <div class="btn" >
+               <h3>Start For Free</h3>
+            </div>
+        </div>
+        <div class="box2">
+            <div class="head-b" style="color: black;">Enterprise</div>
+            <div class="price-b">POC</div>
+            <div class="desc-b">Being enterprise-level security.</div>
+            <ul class="bft-b" style="background-color: white;">
+                 <hr>
+                <li>Custom domain</li>
+                <hr>
+                <li>10,000 CMS items</li>
+                <hr>
+                <li>Custom bandwidth</li>
+            </ul>
+            <div class="btn-1">
+               <h3>Start For Free</h3>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
